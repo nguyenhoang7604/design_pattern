@@ -1,19 +1,20 @@
 #ifndef _VISITABLE_
 #define _VISITABLE_
 
-#include "visitor.h"
+// #include "visitor.h"
+class Visitor;
 
 class Visitable
 {
 private:
     /* data */
 public:
-    Visitable(/* args */);
+    Visitable();
     ~Visitable();
     virtual double accept(Visitor* visitor)=0;
 };
 
-Visitable::Visitable(/* args */)
+Visitable::Visitable()
 {
 }
 

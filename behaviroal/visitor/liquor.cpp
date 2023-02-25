@@ -19,3 +19,8 @@ double Liquor::accept(Visitor* visitor)
 {
     return visitor->visit(this);
 }
+
+// int main()
+// {
+//     return 0;
+// }

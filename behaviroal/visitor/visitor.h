@@ -3,9 +3,13 @@
 #define _VISITOR_
 
 #include <iostream>
-#include "liquor.h"
-#include "necessity.h"
-#include "tabacco.h"
+// #include "liquor.h"
+// #include "necessity.h"
+// #include "tabacco.h"
+
+class Liquor;
+class Necessity;
+class Tabacco;
 
 class Visitor
 {

@@ -1,4 +1,10 @@
+#ifndef _TABACCO_
+#define _TABACCO_
+
 #include "visitable.h"
+#include "visitor.h"
+//  class Visitor;
+
 
 class Tabacco : public Visitable
 {
@@ -11,3 +17,5 @@ public:
     double getPrice();
     double accept(Visitor* visitor) override;
 };
+
+#endif

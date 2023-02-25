@@ -1,5 +1,8 @@
 #include <iostream>
 #include "visitor.h"
+#include "liquor.h"
+#include "necessity.h"
+#include "tabacco.h"
 
 class TaxVistor : public Visitor
 {
