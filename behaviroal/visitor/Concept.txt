@@ -1,0 +1,23 @@
+Visitor is a behavioral design pattern that lets you separate algorithms from the objects on which they operate.
+
+Problem:
+Imagine that your team develops an app which works with geographic information structured as one colossal graph.
+Each node of the graph may represent a complex entity such as a city, but also more granular things like industries,
+sightseeing areas, etc. The nodes are connected with others if there’s a road between the real objects that they represent.
+Under the hood, each node type is represented by its own class, while each specific node is an object.
+
+This example illustrates the structure of the Visitor design pattern. It focuses on answering these questions:
+- What classes does it consist of?
+- What roles do these classes play?
+- In what way the elements of the pattern are related?
+
+Applicability
+    - Use the Visitor when you need to perform an operation on all elements of a complex object structure (for example, an object tree).
+    - The Visitor pattern lets you execute an operation over a set of objects with different classes by having a visitor object implement several variants of the same operation, which correspond to all target classes.
+    - Use the Visitor to clean up the business logic of auxiliary behaviors.
+    - The pattern lets you make the primary classes of your app more focused on their main jobs by extracting all other behaviors into a set of visitor classes.
+    - Use the pattern when a behavior makes sense only in some classes of a class hierarchy, but not in others.
+    - You can extract this behavior into a separate visitor class and implement only those visiting methods that accept objects of relevant classes, leaving the rest empty.
+
+Reffernces:
+- https://refactoring.guru/design-patterns/visitor
