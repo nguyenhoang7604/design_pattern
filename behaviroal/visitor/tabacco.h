@@ -1,10 +1,11 @@
+/*
+    Author: TomNguyen
+    Created: 27/Feb/2023
+*/
 #ifndef _TABACCO_
 #define _TABACCO_
 
 #include "visitable.h"
-#include "visitor.h"
-//  class Visitor;
-
 
 class Tabacco : public Visitable
 {

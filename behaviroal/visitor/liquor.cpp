@@ -1,4 +1,7 @@
-
+/*
+    Author: TomNguyen
+    Created: 27/Feb/2023
+*/
 #include "liquor.h"
 
 Liquor::Liquor(double price)

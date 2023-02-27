@@ -1,3 +1,7 @@
+/*
+    Author: TomNguyen
+    Created: 27/Feb/2023
+*/
 #include "tabacco.h"
 
 Tabacco::Tabacco(double price)

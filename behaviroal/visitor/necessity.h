@@ -1,5 +1,12 @@
+/*
+    Author: TomNguyen
+    Created: 27/Feb/2023
+*/
+#ifndef _NECESSITY_
+#define _NECESSITY_
+
 #include "visitable.h"
-#include "visitor.h"
+
 class Necessity : public Visitable
 {
 private:
@@ -12,3 +19,4 @@ public:
     double accept(Visitor *visitor) override;
 };
 
+#endif // _NECESSITY_

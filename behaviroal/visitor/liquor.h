@@ -1,9 +1,12 @@
+/*
+    Author: TomNguyen
+    Created: 27/Feb/2023
+*/
 #ifndef _LIQUOR_
 #define _LIQUOR_
 
 #include <iostream>
 #include "visitable.h"
-#include "visitor.h"
 
 class Liquor : public Visitable {
 private:

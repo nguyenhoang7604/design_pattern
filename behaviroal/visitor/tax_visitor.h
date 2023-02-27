@@ -1,3 +1,7 @@
+/*
+    Author: TomNguyen
+    Created: 27/Feb/2023
+*/
 #include <iostream>
 #include "visitor.h"
 #include "liquor.h"
@@ -12,6 +16,7 @@ public:
     TaxVistor();
     ~TaxVistor();
     double visit(Liquor* liquor) override;
-    double visit(Necessity* necessity) override;
+    // double visit(Necessity* necessity) override;
     double visit(Tabacco* tabacco) override;
+    double visit(Necessity* necessity) override;
 };
