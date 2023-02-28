@@ -9,7 +9,7 @@
 
 class Liquor;
 class Necessity;
-class Tabacco;
+class Tobacco;
 
 class Visitor
 {
@@ -20,7 +20,7 @@ public:
     ~Visitor() {}
     virtual double visit(Liquor* liquor) = 0;
     virtual double visit(Necessity* necessity) = 0;
-    virtual double visit(Tabacco* tabacco) = 0;
+    virtual double visit(Tobacco* tobacco) = 0;
 };
 
 #endif // _VISITOR_

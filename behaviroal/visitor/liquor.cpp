@@ -3,6 +3,7 @@
     Created: 27/Feb/2023
 */
 #include "liquor.h"
+#include <memory>
 
 Liquor::Liquor(double price)
 {
@@ -18,7 +19,7 @@ double Liquor::getPrice()
     return price_;
 }
 
-double Liquor::accept(Visitor* visitor)
+double Liquor::accept(std::shared_ptr<Visitor> visitor)
 {
     return visitor->visit(this);
 }

@@ -2,21 +2,21 @@
     Author: TomNguyen
     Created: 27/Feb/2023
 */
-#ifndef _NECESSITY_
-#define _NECESSITY_
+#ifndef _TOBACCO_
+#define _TOBACCO_
 
 #include "visitable.h"
 
-class Necessity : public Visitable
+class Tobacco : public Visitable
 {
 private:
     double price_;
 
 public:
-    Necessity(double price);
-    ~Necessity();
+    Tobacco(double price);
+    ~Tobacco();
     double getPrice();
     double accept(std::shared_ptr<Visitor> visitor) override;
 };
 
-#endif // _NECESSITY_
+#endif // _TOBACCO_

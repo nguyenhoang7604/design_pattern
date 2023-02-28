@@ -18,7 +18,7 @@ double Necessity::getPrice()
     return price_;
 }
 
-double Necessity::accept(Visitor* visitor)
+double Necessity::accept(std::shared_ptr<Visitor> visitor)
 {
     return visitor->visit(this);
 }

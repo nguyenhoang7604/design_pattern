@@ -4,7 +4,8 @@
 */
 #include <iostream>
 #include <vector>
-#include "tabacco.h"
+#include <memory>
+#include "tobacco.h"
 #include "liquor.h"
 #include "necessity.h"
 #include "tax_visitor.h"
@@ -12,18 +13,17 @@
 
 int main()
 {      
-    double watorPrice(5.5);
-    Tabacco* cigarret = new Tabacco(99.5);
-    Liquor* wator = new Liquor(5.5);
-    Necessity* milk = new Necessity(15.5);
+    std::unique_ptr<Tobacco> cigarret(new Tobacco(99.5));
+    std::shared_ptr<Liquor> gin(new Liquor(55.5));
+    std::shared_ptr<Necessity> milk(new Necessity(25.5));
+    std::shared_ptr<TaxVistor> taxCalc(new TaxVistor());
+    
+    std::vector <std::shared_ptr<Visitable>> visitables;
+    visitables.push_back(std::move(cigarret));
+    visitables.push_back(gin);
+    visitables.push_back(milk);
 
-    TaxVistor* taxCalc = new TaxVistor();
-    std::vector <Visitable*> visitable;
-    visitable.push_back(cigarret);
-    visitable.push_back(wator);
-    visitable.push_back(milk);
-
-    for(auto v : visitable)
+    for(auto v : visitables)
     {
         std::cout << v->accept(taxCalc) << std::endl;
     }

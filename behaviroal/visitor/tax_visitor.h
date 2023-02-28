@@ -6,7 +6,7 @@
 #include "visitor.h"
 #include "liquor.h"
 #include "necessity.h"
-#include "tabacco.h"
+#include "tobacco.h"
 
 class TaxVistor : public Visitor
 {
@@ -17,6 +17,6 @@ public:
     ~TaxVistor();
     double visit(Liquor* liquor) override;
     // double visit(Necessity* necessity) override;
-    double visit(Tabacco* tabacco) override;
+    double visit(Tobacco* tobacco) override;
     double visit(Necessity* necessity) override;
 };

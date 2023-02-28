@@ -25,8 +25,8 @@ double TaxVistor::visit(Necessity* necessity)
     return necessity->getPrice()*1.05;
 }
 
-double TaxVistor::visit(Tabacco* tabacco)
+double TaxVistor::visit(Tobacco* tobacco)
 {
     std::cout << "Visit Tabacco class" << std::endl;
-    return tabacco->getPrice()*1.35;
+    return tobacco->getPrice()*1.35;
 }

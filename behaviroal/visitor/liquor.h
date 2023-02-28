@@ -15,7 +15,7 @@ public:
     Liquor(double price);
     ~Liquor();
     double getPrice();
-    virtual double accept(Visitor* visitor) override;
+    virtual double accept(std::shared_ptr<Visitor> visitor) override;
 };
 
 #endif // _LIQUOR_
