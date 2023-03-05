@@ -16,7 +16,6 @@ public:
     TaxVistor();
     ~TaxVistor();
     double visit(Liquor* liquor) override;
-    // double visit(Necessity* necessity) override;
     double visit(Tobacco* tobacco) override;
     double visit(Necessity* necessity) override;
 };
