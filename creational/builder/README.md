@@ -7,7 +7,6 @@
 - Hide the creation of the parts from the client so both aren't dependent.
 - The builder knows the specifics and nobody else does.
 
-
 # Pros:
 - You can construct objects step-by-step, defer construction steps or run steps recursively.
 - You can reuse the same construction code when building various representations of products.
@@ -16,7 +15,7 @@
 # Cons:
 - The overall complexity of the code increases since the pattern requires creating multiple new classes.
 
-# UML Design: 
+# UML Design: https://drive.google.com/file/d/1c6nVYBdapHWy69X4wUusCrofqxB8lQPO/view?usp=sharing
 
 
 # Relation with Other Patterns:
